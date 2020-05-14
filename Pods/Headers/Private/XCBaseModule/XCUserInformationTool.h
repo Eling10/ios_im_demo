@@ -1,0 +1,1 @@
+../../../XCBaseModule/XCBaseModule/Classes/Tools/XCUserInformationTool.h
