@@ -6,7 +6,7 @@
 //  Copyright © 2020 樊小聪. All rights reserved.
 //
 
-#import <ElingIM/ELConversation.h>
+#import "ElingIM.h"
 
 @interface ELConversationHelper : NSObject
 

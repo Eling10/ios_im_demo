@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "161A3A00AC2479BA0DA497C5F4126B21"
-               BuildableName = "libXCBaseModule.a"
+               BlueprintIdentifier = "675D2DC87D05667FC4A34FC779584CF0"
+               BuildableName = "XCBaseModule.framework"
                BlueprintName = "XCBaseModule"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

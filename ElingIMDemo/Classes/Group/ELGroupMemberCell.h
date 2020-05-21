@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ElingIM/ELUserInformation.h>
+#import "ElingIM.h"
 
 @interface ELGroupMemberCell : UICollectionViewCell
 

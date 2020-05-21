@@ -12,9 +12,7 @@
 
 
 #import "ELNotificationHelper.h"
-
-#import <ElingIM/ELClient.h>
-#import <ElingIM/EMMulticastDelegate.h>
+#import "ElingIM.h"
 #import <XCDateUnit/XCDateUnit.h>
 #import <XCMacros/XCMacros.h>
 

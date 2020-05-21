@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
-#import <ElingIM/ELMessage.h>
+#import "ElingIM.h"
 
 @interface ELMessageBubbleView : UIImageView
 

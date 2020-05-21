@@ -19,6 +19,7 @@
 
 #import "ELAvatarNameCell.h"
 
+#import "ElingIM.h"
 #import "ELUtilMacros.h"
 #import "ELColorMacros.h"
 #import "ELChineseToPinyin.h"
@@ -26,7 +27,6 @@
 #import "UIScrollView+Refresh.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELClient.h>
 #import <Masonry/Masonry.h>
 #import <XCMacros/XCMacros.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -275,7 +275,7 @@ LazyLoadMethod(sectionTitles);
     } else {
         ELUserInformation *infoM = self.dataSource[section - 1][row];
         [cell.avatarView sd_setImageWithURL:[NSURL URLWithString:infoM.avatarUrl] placeholderImage:[UIImage imageNamed:@"touxiang_default"]];
-        cell.nameLabel.text = infoM.nickName ?: infoM.userName;
+        cell.nameLabel.text = infoM.nickName;
         cell.nameLabel.font = [UIFont systemFontOfSize:16];
     }
     

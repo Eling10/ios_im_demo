@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ElingIM.h"
 #import "ELMessageBubbleView.h"
 
-#import <ElingIM/ELMessage.h>
 
 @class ELMessageCell;
 @protocol ELMessageCellDelegate <NSObject>

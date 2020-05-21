@@ -1,0 +1,6 @@
+framework module XCSettingView {
+  umbrella header "XCSettingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

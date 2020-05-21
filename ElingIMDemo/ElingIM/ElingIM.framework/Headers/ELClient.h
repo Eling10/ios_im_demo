@@ -42,23 +42,6 @@
 
 
 /**
- *  IM服务器相关的配置项
- */
-@interface ELIMOptions : NSObject
-
-/// 服务器地址
-@property (copy, nonatomic) NSString *serverURL;
-/// 消息服务
-@property (copy, nonatomic) NSString *imURL;
-/// 聊天室服务
-@property (copy, nonatomic) NSString *chatRoomURL;
-/// 音视频服务
-@property (copy, nonatomic) NSString *voipURL;
-
-@end
-
-
-/**
  *  客户端初始化项目配置类
  */
 @interface ELClientOptions : NSObject
@@ -81,8 +64,6 @@
 @property (strong, nonatomic, readonly) ELClientOptions *options;
 /// 阿里OSS配置项
 @property (strong, nonatomic, readonly) ELOSSOptions *ossOptions;
-/// IM配置项
-@property (strong, nonatomic, readonly) ELIMOptions *imOptions;
 /// 聊天管理
 @property (strong, nonatomic, readonly) ELChatManager *chatManager;
 /// 音视频通话管理

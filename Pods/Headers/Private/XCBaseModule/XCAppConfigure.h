@@ -1,1 +1,0 @@
-../../../XCBaseModule/XCBaseModule/Classes/AppConfigure/XCAppConfigure.h

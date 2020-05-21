@@ -1,0 +1,6 @@
+framework module XCCountdownButton {
+  umbrella header "XCCountdownButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

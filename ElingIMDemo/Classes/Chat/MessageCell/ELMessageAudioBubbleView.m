@@ -11,7 +11,7 @@
 */
 
 #import "ELMessageAudioBubbleView.h"
-#import <ElingIM/ELVoiceMessageBody.h>
+#import "ElingIM.h"
 
 #define kELMessageAudioMinWidth 30
 #define kELMessageAudioMaxWidth 120

@@ -12,11 +12,12 @@
 
 #import "ELBaseViewController.h"
 #import "ELCallButton.h"
+#import <XCMacros/XCMacros.h>
 #import <AVFoundation/AVFoundation.h>
 
 /// 是否插入耳机
-static bool isHeadphone()
-{
+BeginIgnoreUnusedVariableWarning
+static bool isHeadphone() {
     AVAudioSessionRouteDescription* route = [[AVAudioSession sharedInstance] currentRoute];
     for (AVAudioSessionPortDescription* desc in [route outputs]) {
         if ([desc.portType isEqualToString:AVAudioSessionPortBluetoothA2DP]
@@ -28,6 +29,7 @@ static bool isHeadphone()
     }
     return NO;
 }
+EndIgnoreUnusedVariableWarning
 
 
 @interface ELCallViewController : ELBaseViewController

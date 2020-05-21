@@ -16,6 +16,7 @@
 #import "ELMessageCell.h"
 #import "ELMessageTimeCell.h"
 
+#import "ElingIM.h"
 #import "ELUtilMacros.h"
 #import "ELDateHelper.h"
 #import "ELConversationHelper.h"
@@ -23,15 +24,6 @@
 #import "XCPhotoBrowserManager.h"
 #import "UIScrollView+Refresh.h"
 #import "UIView+ELExtension.h"
-
-#import <ElingIM/ELClient.h>
-#import <ElingIM/ELConversation.h>
-#import <ElingIM/ELTextMessageBody.h>
-#import <ElingIM/ELImageMessageBody.h>
-#import <ElingIM/ELVideoMessageBody.h>
-#import <ElingIM/ELVoiceMessageBody.h>
-#import <ElingIM/ELAudioCallMessageBody.h>
-#import <ElingIM/ELVideoCallMessageBody.h>
 
 #import <AVKit/AVKit.h>
 #import <Photos/Photos.h>
@@ -307,9 +299,6 @@ static NSString *const ELMessageTimeCellIdentifier = @"ELMessageTimeCellIdentifi
     };
     
     /// 加载数据（本地数据）
-//    [[ELDatabaseManager sharedInstance] getMessages:self.conversation.conversationId page:self.page size:self.pageSize completion:^(NSArray<ELMessage *> *messages, NSError *aError) {
-//        block(messages, aError);
-//    }];
     [[ELClient sharedClient].chatManager getMessages:self.conversation.conversationId page:self.page size:self.pageSize completion:^(NSArray<ELMessage *> *messages, NSError *aError) {
         block(messages, aError);
     }];
@@ -323,8 +312,6 @@ static NSString *const ELMessageTimeCellIdentifier = @"ELMessageTimeCellIdentifi
         [self.chatBar hideKeyboard];
     }
 }
-
-// 
 
 #pragma mark - 🎬 👀 Action Method 👀
 

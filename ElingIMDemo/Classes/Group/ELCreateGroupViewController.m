@@ -13,9 +13,9 @@
 
 #import "ELCreateGroupViewController.h"
 
+#import "ElingIM.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELClient.h>
 #import <XCMacros/XCMacros.h>
 #import <Masonry/Masonry.h>
 

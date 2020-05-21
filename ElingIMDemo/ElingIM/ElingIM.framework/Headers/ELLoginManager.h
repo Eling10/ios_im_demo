@@ -46,12 +46,6 @@ typedef NS_ENUM(NSUInteger, ELConnectionState) {
 
 @interface ELLoginManager : NSObject
 
-/**
- *  初始化 strRTC 的SDK，外部不用关心，框架内部会自动调用此方法
- */
-- (void)_initializeStrRTC:(NSString *)userId
-               completion:(void (^)(NSError *aError))aCompletionBlock;
-
 /// 添加代理
 - (void)addDelegate:(id<ELLoginManagerDelegate>)delegate;
 /// 移除代理

@@ -7,7 +7,7 @@
 //
 
 #import "ELBaseViewController.h"
-#import <ElingIM/ELConversation.h>
+#import "ElingIM.h"
 
 @interface ELChatViewController : ELBaseViewController
 

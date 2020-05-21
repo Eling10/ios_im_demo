@@ -9,8 +9,8 @@
 #import "ELAudioRecordView.h"
 #import "ELAudioRecordHelper.h"
 #import "UIImageView+GIF.h"
+#import "ElingIM.h"
 #import <XCMacros/XCMacros.h>
-#import <ElingIM/ELClient.h>
 
 @interface ELAudioRecordView ()
 

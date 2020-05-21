@@ -20,13 +20,12 @@
 
 #import "ELAvatarNameCell.h"
 
+#import "ElingIM.h"
 #import "ELUtilMacros.h"
 #import "ELColorMacros.h"
 #import "UIScrollView+Refresh.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELClient.h>
-#import <ElingIM/ELGroup.h>
 #import <Masonry/Masonry.h>
 #import <XCMacros/XCMacros.h>
 #import <SDWebImage/UIImageView+WebCache.h>

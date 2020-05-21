@@ -11,7 +11,7 @@
 */
 
 #import "ELMessageFileBubbleView.h"
-#import <ElingIM/ELFileMessageBody.h>
+#import "ElingIM.h"
 
 @implementation ELMessageFileBubbleView
 

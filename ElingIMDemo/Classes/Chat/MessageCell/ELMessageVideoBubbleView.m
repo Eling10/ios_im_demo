@@ -12,7 +12,7 @@
 
 
 #import "ELMessageVideoBubbleView.h"
-#import <ElingIM/ELVideoMessageBody.h>
+#import "ElingIM.h"
 
 @implementation ELMessageVideoBubbleView
 

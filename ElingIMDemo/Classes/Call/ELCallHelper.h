@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import <ElingIM/ELCallManager.h>
-#import <ElingIM/ELCallMessageBody.h>
+#import "ElingIM.h"
 
 @interface ELCallHelper : NSObject
 

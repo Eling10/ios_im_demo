@@ -15,10 +15,10 @@
 
 #import "ELInviteFriendAlertController.h"
 
+#import "ElingIM.h"
 #import "ELSearchBar.h"
 #import "ELAvatarNameCell.h"
 
-#import <ElingIM/ELClient.h>
 #import <XCMacros/XCMacros.h>
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>

@@ -12,7 +12,6 @@
 #import <XCCategory/UIView+XCExtension.h>
 #import <XCCategory/UIButton+XCExtension.h>
 #import <XCCategory/UIColor+XCExtension.h>
-#import <XCBaseModule/XCAppConfigure.h>
 #import <XCMacros/XCMacros.h>
 
 
@@ -261,7 +260,7 @@
     descLB.top  = titleLB.bottom + 5;
     descLB.left = 0;
     descLB.textAlignment = NSTextAlignmentCenter;
-    descLB.textColor = [XCAppConfigure shareInstance].grayTextColor;
+    descLB.textColor = ELGRAY_TEXT_COLOR;
     descLB.font = [UIFont systemFontOfSize:13];
     descLB.text = desc;
     

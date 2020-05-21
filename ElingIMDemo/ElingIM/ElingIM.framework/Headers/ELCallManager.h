@@ -175,13 +175,6 @@ typedef NS_ENUM(NSUInteger, ELCallAudioCodecType) {
  */
 - (void)callDidEnd:(ELMessage *)aMessage;
 
-/**
- *  收到实时数据流，此方法会调用多次
- *
- *  @param data 二进制流
- */
-- (void)onReceiveRealtimeData:(NSData *)data;
-
 @end
 
 
@@ -207,6 +200,20 @@ typedef NS_ENUM(NSUInteger, ELCallAudioCodecType) {
 
 /// 配置通话项
 - (void)setCallOptions:(ELCallOptions *)options;
+
+#pragma mark - 👀 通话录制 👀 💤
+
+/**
+ *  开始录制（目前只支持音频的录制）
+ *
+ * @param dirPath 录制的文件存储目录
+ */
+- (void)startCallRecord:(NSString *)dirPath;
+
+/**
+ *  停止录制（生成的是 wav 格式的音频文件）
+ */
+- (void)stopCallRecord:(void(^)(ELMessage *callSession, NSString *filePath, NSError *error))aCompletionBlock;
 
 #pragma mark - 👀 主叫方调用 👀 💤
 

@@ -18,12 +18,11 @@
 
 #import "ELGroupMemberCell.h"
 
+#import "ElingIM.h"
 #import "ELColorMacros.h"
 #import "ELUtilMacros.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELGroup.h>
-#import <ElingIM/ELClient.h>
 #import <Masonry/Masonry.h>
 #import <XCMacros/XCMacros.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -399,7 +398,8 @@ static NSString *const footerIdentifier = @"footerIdentifier";
     vc.doneCompletion = ^(NSArray<ELUserInformation *> *aSelectedArray) {
         @strongify(self);
         // 增加成员
-        [[ELClient sharedClient].groupManager addMembers:aSelectedArray toGroup:self->_groupId completion:^(NSError *aError) {
+        NSArray *aUsers = [aSelectedArray valueForKeyPath:@"_userId"];
+        [[ELClient sharedClient].groupManager addMembers:aUsers toGroup:self->_groupId completion:^(NSError *aError) {
             @strongify(self);
             [self loadData];
         }];
@@ -422,7 +422,8 @@ static NSString *const footerIdentifier = @"footerIdentifier";
     vc.doneCompletion = ^(NSArray<ELUserInformation *> *aSelectedArray) {
         @strongify(self);
         // 减少成员
-        [[ELClient sharedClient].groupManager removeMembers:aSelectedArray fromGroup:self->_groupId completion:^(NSError *aError) {
+        NSArray *aUsers = [aSelectedArray valueForKeyPath:@"_userId"];
+        [[ELClient sharedClient].groupManager removeMembers:aUsers fromGroup:self->_groupId completion:^(NSError *aError) {
             @strongify(self);
             [self loadData];
         }];

@@ -7,8 +7,8 @@
 //
 
 #import "ELMessageImageBubbleView.h"
+#import "ElingIM.h"
 #import <XCMacros/XCMacros.h>
-#import <ElingIM/ELImageMessageBody.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #define kELMessageImageDefaultSize  120

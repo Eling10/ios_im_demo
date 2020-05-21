@@ -11,12 +11,15 @@
  */
 
 #import "ELLoginViewController.h"
+
+#import "ElingIM.h"
 #import "UIView+ELExtension.h"
 #import "ELNotificationHelper.h"
 #import "ELRootViewControllerHelper.h"
-#import <ElingIM/ELClient.h>
+
 #import <XCMacros/XCMacros.h>
 #import <XCBaseModule/XCUserInformationTool.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 #define kDelayRatio     0.2
 
@@ -75,12 +78,17 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
     [[UIApplication sharedApplication].keyWindow endEditing:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [[IQKeyboardManager sharedManager] setEnable:NO];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
     
     if (self.navigationController) {
         [self.navigationController setNavigationBarHidden:YES animated:YES];

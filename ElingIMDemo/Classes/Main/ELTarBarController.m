@@ -7,14 +7,14 @@
 //
 
 #import "ELTarBarController.h"
+#import "ElingIM.h"
+#import "ELColorMacros.h"
 #import "ELUtilMacros.h"
 #import "ELNotificationHelper.h"
 #import "ELNavigationController.h"
-#import "ELColorMacros.h"
-#import "ELRootViewControllerHelper.h"
-
 #import <XCMacros/XCMacros.h>
-#import <ElingIM/ELClient.h>
+
+#import "ELRootViewControllerHelper.h"
 
 @interface ELTarBarController ()<ELNotificationsDelegate, ELLoginManagerDelegate, ELChatManagerDelegate, ELGroupManagerDelegate>
 

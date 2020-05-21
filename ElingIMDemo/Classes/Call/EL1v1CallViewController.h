@@ -12,9 +12,7 @@
 
 #import "ELCallViewController.h"
 #import <Masonry/Masonry.h>
-#import <ElingIM/ELClient.h>
-#import <ElingIM/ELMessage.h>
-#import <ElingIM/ELCallMessageBody.h>
+#import "ElingIM.h"
 
 typedef NS_ENUM(NSUInteger, ELCallSessionStatus) {
     /// 通话没开始

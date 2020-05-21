@@ -11,9 +11,7 @@
  */
 
 #import "ELBaseViewController.h"
-
-#import <ElingIM/ELGroup.h>
-#import <ElingIM/ELUserInformation.h>
+#import "ElingIM.h"
 
 @interface ELCreateGroupViewController : ELBaseViewController
 

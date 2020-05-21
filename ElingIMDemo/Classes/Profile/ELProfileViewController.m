@@ -11,25 +11,31 @@
  */
 
 #import "ELProfileViewController.h"
+#import "ELInformationViewController.h"
 #import "ELProfileHeaderView.h"
 
+#import "ElingIM.h"
+#import "ELColorMacros.h"
 #import "UIView+ELExtension.h"
 #import "ELRootViewControllerHelper.h"
 
-#import <ElingIM/ELClient.h>
 #import <XCMacros/XCMacros.h>
 #import <Masonry/Masonry.h>
+#import <XCSettingView/XCSettingView.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <XCCategory/UIView+XCExtension.h>
 #import <XCCategory/UIColor+XCExtension.h>
 #import <XCCategory/UIImage+XCExtension.h>
 
-@interface ELProfileViewController ()<UITableViewDelegate>
+@interface ELProfileViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) ELProfileHeaderView *headerView;
 @property (weak, nonatomic) UITableView *tableView;
 
 @end
+
+
+static NSString *const cellIdentifier = @"cellIdentifier";
 
 @implementation ELProfileViewController
 {
@@ -65,7 +71,14 @@
     
     // footerView
     UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, FetchCurrentHeightFromIphone6Height(200))];
+    UIView *seperatorLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.5)];
+    seperatorLine.backgroundColor = ELCELL_SEPRATOR_COLOR;
+    [footerView addSubview:seperatorLine];
+    
     UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    logoutButton.width = SCREEN_WIDTH - 50;
+    logoutButton.height = 44;
+    logoutButton.center = footerView.center;
     logoutButton.backgroundColor = [UIColor clearColor];
     [logoutButton setTitleColor:[UIColor systemRedColor] forState:UIControlStateNormal];
     logoutButton.titleLabel.font = [UIFont systemFontOfSize:16];
@@ -76,21 +89,17 @@
     [logoutButton setTitle:@"退出登录" forState:UIControlStateNormal];
     [logoutButton addTarget:self action:@selector(clickLogoutButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:logoutButton];
-    [logoutButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(footerView).offset(25);
-        make.right.equalTo(footerView).offset(-25);
-        make.height.offset(44);
-        make.centerY.equalTo(footerView);
-    }];
     
     // tableView
     UITableView *tableview = [[UITableView alloc] init];
     self.tableView = tableview;
     self.tableView.rowHeight = 60;
+    self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.tableHeaderView = self.headerView;
     self.tableView.tableFooterView = footerView;
     self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:self.tableView];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -119,6 +128,42 @@
         }
         [ELRootViewControllerHelper chooseRootViewControllerWithType:ELRootViewControllerTypeLogin];
     }];
+}
+
+#pragma mark - 📕 👀 UITableViewDataSource 👀
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        XCSettingView *settingView = [[XCSettingView alloc] init];
+        settingView.title = @"我的资料";
+        settingView.showArrowIcon = YES;
+        settingView.showLeftIcon = NO;
+        [cell.contentView addSubview:settingView];
+        [settingView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(cell.contentView);
+        }];
+    }
+    return cell;
+}
+
+#pragma mark - 💉 👀 UITableViewDelegate 👀
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    /// 跳转到个人信息控制器
+    ELInformationViewController *vc = [ELInformationViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 #pragma mark - 💉 👀 UIScrollViewDelegate 👀

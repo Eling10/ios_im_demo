@@ -10,6 +10,7 @@
 #import "ELConversationCell.h"
 #import "ELChatViewController.h"
 
+#import "ElingIM.h"
 #import "ELUtilMacros.h"
 #import "ELColorMacros.h"
 #import "ELConversationHelper.h"
@@ -18,8 +19,6 @@
 
 #import <XCMacros/XCMacros.h>
 #import <Masonry/Masonry.h>
-#import <ElingIM/ELClient.h>
-#import <ElingIM/ELConversation.h>
 
 @interface ELConversationViewController ()<ELChatManagerDelegate, ELGroupManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 

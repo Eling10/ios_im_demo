@@ -13,8 +13,8 @@
 
 #import "ELRegisterViewController.h"
 
+#import "ElingIM.h"
 #import "UIView+ELExtension.h"
-#import <ElingIM/ELClient.h>
 
 @interface ELRegisterViewController ()
 
@@ -93,12 +93,12 @@
 {
     /// 未输入手机号
     if (!self.phoneF.text.length) {
-        [self.navigationController.view showText:@"请输入手机号"];
+        [self.navigationController.view showText:@"请输入账号"];
         return;
     }
     
     if (!self.passwordF.text.length) {
-        [self.navigationController.view showText:@"请输入新密码"];
+        [self.navigationController.view showText:@"请输入密码"];
         return;
     }
 

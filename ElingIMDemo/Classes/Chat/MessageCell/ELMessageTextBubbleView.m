@@ -7,9 +7,7 @@
 //
 
 #import "ELMessageTextBubbleView.h"
-
-#import <ElingIM/ELTextMessageBody.h>
-#import <ElingIM/ELCallMessageBody.h>
+#import "ElingIM.h"
 
 @implementation ELMessageTextBubbleView
 

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E36DF96CEAF18399D5943AD /* libPods-ElingIMDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ADC965E7D739826B1C2947 /* libPods-ElingIMDemoTests.a */; };
-		1BF5F80F9E34AE0892F24539 /* libPods-ElingIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 134442BB016EED6F095BFAB2 /* libPods-ElingIMDemo.a */; };
+		1E0E819324762D0A00F643FC /* ELProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F7E246BECA1004C16A1 /* ELProfileViewController.m */; };
+		1E0E819624762D6C00F643FC /* ELInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E819524762D6C00F643FC /* ELInformationViewController.m */; };
+		1E0E819924762DC600F643FC /* NSObject+ELLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E819724762DC600F643FC /* NSObject+ELLog.m */; };
+		1E0E819E24764DE100F643FC /* ElingIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0E819D24764DE100F643FC /* ElingIM.framework */; };
+		1E0E81A12476523C00F643FC /* ELForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E81A02476523C00F643FC /* ELForgetPasswordViewController.m */; };
 		1E443C99246B7FB5004C16A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443C98246B7FB5004C16A1 /* AppDelegate.m */; };
 		1E443CB4246B7FB8004C16A1 /* ElingIMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443CB3246B7FB8004C16A1 /* ElingIMDemoTests.m */; };
 		1E443CBF246B7FB8004C16A1 /* ElingIMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443CBE246B7FB8004C16A1 /* ElingIMDemoUITests.m */; };
@@ -36,7 +39,6 @@
 		1E444138246BECA9004C16A1 /* ELNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F78246BECA1004C16A1 /* ELNotificationViewController.m */; };
 		1E444139246BECA9004C16A1 /* ELNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F7A246BECA1004C16A1 /* ELNotificationCell.m */; };
 		1E44413A246BECA9004C16A1 /* ELProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F7C246BECA1004C16A1 /* ELProfileHeaderView.m */; };
-		1E44413B246BECA9004C16A1 /* ELProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F7E246BECA1004C16A1 /* ELProfileViewController.m */; };
 		1E44413C246BECA9004C16A1 /* ELWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F81246BECA1004C16A1 /* ELWaveView.m */; };
 		1E44413D246BECA9004C16A1 /* ELCoreTextResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F85246BECA1004C16A1 /* ELCoreTextResult.m */; };
 		1E44413E246BECA9004C16A1 /* ELCoreTextConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E443F87246BECA1004C16A1 /* ELCoreTextConst.m */; };
@@ -383,9 +385,10 @@
 		1E444293246BECA9004C16A1 /* ELContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444128246BECA9004C16A1 /* ELContactViewController.m */; };
 		1E444294246BECA9004C16A1 /* ELAvatarNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444129246BECA9004C16A1 /* ELAvatarNameCell.m */; };
 		1E444295246BECA9004C16A1 /* ELInviteFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44412A246BECA9004C16A1 /* ELInviteFriendViewController.m */; };
-		1E444297246BF30D004C16A1 /* ElingIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E444296246BF30D004C16A1 /* ElingIM.framework */; };
 		1E444299246BF50B004C16A1 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E444298246BF50B004C16A1 /* VideoToolbox.framework */; };
-		4F02C276313EAE818AD86C60 /* libPods-ElingIMDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29FF45216DD1EDB134ED20 /* libPods-ElingIMDemoUITests.a */; };
+		43AB2E21D37C1F9ABA15DCE3 /* Pods_ElingIMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0783B3445D84277C7AF878 /* Pods_ElingIMDemo.framework */; };
+		934DDE0A7CA9104A64F76428 /* Pods_ElingIMDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADA6356A519B9F95898C815 /* Pods_ElingIMDemoTests.framework */; };
+		9D5F27FB8D52FB8E304CF270 /* Pods_ElingIMDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECACCB9C73D3C3CF73CD220 /* Pods_ElingIMDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -406,7 +409,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		134442BB016EED6F095BFAB2 /* libPods-ElingIMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElingIMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0E81912476289900F643FC /* ElingIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElingIM.h; sourceTree = "<group>"; };
+		1E0E819424762D6B00F643FC /* ELInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELInformationViewController.h; sourceTree = "<group>"; };
+		1E0E819524762D6C00F643FC /* ELInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELInformationViewController.m; sourceTree = "<group>"; };
+		1E0E819724762DC600F643FC /* NSObject+ELLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ELLog.m"; sourceTree = "<group>"; };
+		1E0E819824762DC600F643FC /* NSObject+ELLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ELLog.h"; sourceTree = "<group>"; };
+		1E0E819D24764DE100F643FC /* ElingIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElingIM.framework; sourceTree = "<group>"; };
+		1E0E819F2476523C00F643FC /* ELForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELForgetPasswordViewController.h; sourceTree = "<group>"; };
+		1E0E81A02476523C00F643FC /* ELForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELForgetPasswordViewController.m; sourceTree = "<group>"; };
 		1E443C94246B7FB5004C16A1 /* ElingIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElingIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E443C97246B7FB5004C16A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E443C98246B7FB5004C16A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -868,15 +878,15 @@
 		1E444128246BECA9004C16A1 /* ELContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELContactViewController.m; sourceTree = "<group>"; };
 		1E444129246BECA9004C16A1 /* ELAvatarNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAvatarNameCell.m; sourceTree = "<group>"; };
 		1E44412A246BECA9004C16A1 /* ELInviteFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELInviteFriendViewController.m; sourceTree = "<group>"; };
-		1E444296246BF30D004C16A1 /* ElingIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElingIM.framework; sourceTree = "<group>"; };
 		1E444298246BF50B004C16A1 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2E0783B3445D84277C7AF878 /* Pods_ElingIMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElingIMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C277DAC9489F65B86473B0 /* Pods-ElingIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemo.release.xcconfig"; path = "Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5C29FF45216DD1EDB134ED20 /* libPods-ElingIMDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElingIMDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77ADC965E7D739826B1C2947 /* libPods-ElingIMDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElingIMDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADA6356A519B9F95898C815 /* Pods_ElingIMDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElingIMDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4995AC225B6F20B1C7F92D /* Pods-ElingIMDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ElingIMDemoTests/Pods-ElingIMDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C5BAAFADB85891644ED99BF /* Pods-ElingIMDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-ElingIMDemoUITests/Pods-ElingIMDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F9889C904209A30654E6E67 /* Pods-ElingIMDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ElingIMDemoUITests/Pods-ElingIMDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		912D55B9BE7DA39EC8F330AE /* Pods-ElingIMDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ElingIMDemoTests/Pods-ElingIMDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AECACCB9C73D3C3CF73CD220 /* Pods_ElingIMDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElingIMDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41F772B68D10FF221F6E144 /* Pods-ElingIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElingIMDemo.debug.xcconfig"; path = "Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -886,13 +896,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E444299246BF50B004C16A1 /* VideoToolbox.framework in Frameworks */,
-				1E444297246BF30D004C16A1 /* ElingIM.framework in Frameworks */,
 				1E443F49246BE276004C16A1 /* libiconv.tbd in Frameworks */,
+				1E0E819E24764DE100F643FC /* ElingIM.framework in Frameworks */,
 				1E443F47246BE268004C16A1 /* libbz2.1.0.5.tbd in Frameworks */,
 				1E443F45246BE260004C16A1 /* libz.tbd in Frameworks */,
 				1E444281246BECA9004C16A1 /* libopencore-amrnb.a in Frameworks */,
 				1E444280246BECA9004C16A1 /* libopencore-amrwb.a in Frameworks */,
-				1BF5F80F9E34AE0892F24539 /* libPods-ElingIMDemo.a in Frameworks */,
+				43AB2E21D37C1F9ABA15DCE3 /* Pods_ElingIMDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,7 +910,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E36DF96CEAF18399D5943AD /* libPods-ElingIMDemoTests.a in Frameworks */,
+				934DDE0A7CA9104A64F76428 /* Pods_ElingIMDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,7 +918,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F02C276313EAE818AD86C60 /* libPods-ElingIMDemoUITests.a in Frameworks */,
+				9D5F27FB8D52FB8E304CF270 /* Pods_ElingIMDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,7 +981,8 @@
 		1E443CCC246B802C004C16A1 /* ElingIM */ = {
 			isa = PBXGroup;
 			children = (
-				1E444296246BF30D004C16A1 /* ElingIM.framework */,
+				1E0E81912476289900F643FC /* ElingIM.h */,
+				1E0E819D24764DE100F643FC /* ElingIM.framework */,
 			);
 			name = ElingIM;
 			path = ElingIMDemo/ElingIM;
@@ -984,9 +995,9 @@
 				1E443F48246BE276004C16A1 /* libiconv.tbd */,
 				1E443F46246BE268004C16A1 /* libbz2.1.0.5.tbd */,
 				1E443F44246BE260004C16A1 /* libz.tbd */,
-				134442BB016EED6F095BFAB2 /* libPods-ElingIMDemo.a */,
-				77ADC965E7D739826B1C2947 /* libPods-ElingIMDemoTests.a */,
-				5C29FF45216DD1EDB134ED20 /* libPods-ElingIMDemoUITests.a */,
+				2E0783B3445D84277C7AF878 /* Pods_ElingIMDemo.framework */,
+				7ADA6356A519B9F95898C815 /* Pods_ElingIMDemoTests.framework */,
+				AECACCB9C73D3C3CF73CD220 /* Pods_ElingIMDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1034,8 +1045,8 @@
 				1E443F61246BECA1004C16A1 /* ELGroupMemberListViewController.m */,
 				1E443F5E246BECA1004C16A1 /* EMInviteGroupMemberViewController.h */,
 				1E443F5A246BECA1004C16A1 /* EMInviteGroupMemberViewController.m */,
-				1E443F5F246BECA1004C16A1 /* ELGroupDetailViewController.m */,
 				1E443F63246BECA1004C16A1 /* ELCreateGroupViewController.h */,
+				1E443F5F246BECA1004C16A1 /* ELGroupDetailViewController.m */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -1090,6 +1101,8 @@
 				1E443F7C246BECA1004C16A1 /* ELProfileHeaderView.m */,
 				1E443F80246BECA1004C16A1 /* ELProfileViewController.h */,
 				1E443F7E246BECA1004C16A1 /* ELProfileViewController.m */,
+				1E0E819424762D6B00F643FC /* ELInformationViewController.h */,
+				1E0E819524762D6C00F643FC /* ELInformationViewController.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1496,6 +1509,8 @@
 				1E4440E5246BECA3004C16A1 /* ELLoginViewController.m */,
 				1E4440E7246BECA3004C16A1 /* ELRegisterViewController.h */,
 				1E4440E6246BECA3004C16A1 /* ELRegisterViewController.m */,
+				1E0E819F2476523C00F643FC /* ELForgetPasswordViewController.h */,
+				1E0E81A02476523C00F643FC /* ELForgetPasswordViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1515,12 +1530,13 @@
 				1E4440ED246BECA8004C16A1 /* ELConversationHelper.m */,
 				1E44410C246BECA8004C16A1 /* ELDateHelper.h */,
 				1E444100246BECA8004C16A1 /* ELDateHelper.m */,
+				1E0E819824762DC600F643FC /* NSObject+ELLog.h */,
+				1E0E819724762DC600F643FC /* NSObject+ELLog.m */,
 				1E4440F0246BECA8004C16A1 /* UIView+ELExtension.h */,
 				1E444108246BECA8004C16A1 /* UIView+ELExtension.m */,
 				1E44410D246BECA8004C16A1 /* UIScrollView+Refresh.h */,
 				1E4440FF246BECA8004C16A1 /* UIScrollView+Refresh.m */,
 				1E4440F1246BECA8004C16A1 /* VoiceConvert */,
-				1E444101246BECA8004C16A1 /* MWPhotoBrowser */,
 				1E44410E246BECA8004C16A1 /* XCPhotoBrowser */,
 			);
 			path = Helper;
@@ -1565,45 +1581,6 @@
 				1E4440FE246BECA8004C16A1 /* wav.h */,
 			);
 			path = amrwapper;
-			sourceTree = "<group>";
-		};
-		1E444101246BECA8004C16A1 /* MWPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				1E444102246BECA8004C16A1 /* Libraries */,
-			);
-			path = MWPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		1E444102246BECA8004C16A1 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				1E444103246BECA8004C16A1 /* DACircularProgress */,
-				1E444104246BECA8004C16A1 /* PSTCollectionView */,
-				1E444105246BECA8004C16A1 /* SDWebImage */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		1E444103246BECA8004C16A1 /* DACircularProgress */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DACircularProgress;
-			sourceTree = "<group>";
-		};
-		1E444104246BECA8004C16A1 /* PSTCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PSTCollectionView;
-			sourceTree = "<group>";
-		};
-		1E444105246BECA8004C16A1 /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		1E44410E246BECA8004C16A1 /* XCPhotoBrowser */ = {
@@ -1677,7 +1654,7 @@
 				1E443C90246B7FB5004C16A1 /* Sources */,
 				1E443C91246B7FB5004C16A1 /* Frameworks */,
 				1E443C92246B7FB5004C16A1 /* Resources */,
-				3D91600189A2B1F5BF9E2623 /* [CP] Copy Pods Resources */,
+				2854CBAA97F17B5025962F69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2084,7 +2061,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D91600189A2B1F5BF9E2623 /* [CP] Copy Pods Resources */ = {
+		2854CBAA97F17B5025962F69 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2092,20 +2069,50 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/JGProgressHUD/JGProgressHUD.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XCApplicationHelper/XCApplicationHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/XCBaseModule/XCBaseModule.framework",
+				"${BUILT_PRODUCTS_DIR}/XCCategory/XCCategory.framework",
+				"${BUILT_PRODUCTS_DIR}/XCCountdownButton/XCCountdownButton.framework",
+				"${BUILT_PRODUCTS_DIR}/XCCustomItemView/XCCustomItemView.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDateUnit/XCDateUnit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCPresentation/XCPresentation.framework",
+				"${BUILT_PRODUCTS_DIR}/XCProgressHUD/XCProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XCSettingView/XCSettingView.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JGProgressHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunOSSiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCApplicationHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCBaseModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCCategory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCCountdownButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCCustomItemView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDateUnit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCPresentation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCSettingView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElingIMDemo/Pods-ElingIMDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A1F08945BBC522FF170C801 /* [CP] Check Pods Manifest.lock */ = {
@@ -2181,6 +2188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0E819324762D0A00F643FC /* ELProfileViewController.m in Sources */,
 				1E44428B246BECA9004C16A1 /* XCPhotoBrowserController.m in Sources */,
 				1E444285246BECA9004C16A1 /* ELDateHelper.m in Sources */,
 				1E444138246BECA9004C16A1 /* ELNotificationViewController.m in Sources */,
@@ -2195,6 +2203,7 @@
 				1E444139246BECA9004C16A1 /* ELNotificationCell.m in Sources */,
 				1E443F54246BEC6E004C16A1 /* main.m in Sources */,
 				1E444293246BECA9004C16A1 /* ELContactViewController.m in Sources */,
+				1E0E819924762DC600F643FC /* NSObject+ELLog.m in Sources */,
 				1E444276246BECA9004C16A1 /* ELCallHelper.m in Sources */,
 				1E444133246BECA9004C16A1 /* ELBaseViewController.m in Sources */,
 				1E444136246BECA9004C16A1 /* ELSearchBar.m in Sources */,
@@ -2232,11 +2241,11 @@
 				1E44428A246BECA9004C16A1 /* XCPhotoBrowserCell.m in Sources */,
 				1E444148246BECA9004C16A1 /* ELMessageTimeCell.m in Sources */,
 				1E44414D246BECA9004C16A1 /* ELAudioRecordView.m in Sources */,
-				1E44413B246BECA9004C16A1 /* ELProfileViewController.m in Sources */,
 				1E444274246BECA9004C16A1 /* ELCallViewController.m in Sources */,
 				1E44428C246BECA9004C16A1 /* XCPhotoBrowserModel.m in Sources */,
 				1E444290246BECA9004C16A1 /* ELBadgeLabel.m in Sources */,
 				1E44413E246BECA9004C16A1 /* ELCoreTextConst.m in Sources */,
+				1E0E81A12476523C00F643FC /* ELForgetPasswordViewController.m in Sources */,
 				1E444147246BECA9004C16A1 /* ELMessageImageBubbleView.m in Sources */,
 				1E444134246BECA9004C16A1 /* ELIgnoreHighlightButton.m in Sources */,
 				1E444152246BECA9004C16A1 /* ELEmotionView.m in Sources */,
@@ -2245,6 +2254,7 @@
 				1E444155246BECA9004C16A1 /* ELAudioPlayerHelper.mm in Sources */,
 				1E444132246BECA9004C16A1 /* ELNavigationController.m in Sources */,
 				1E444284246BECA9004C16A1 /* UIScrollView+Refresh.m in Sources */,
+				1E0E819624762D6C00F643FC /* ELInformationViewController.m in Sources */,
 				1E444153246BECA9004C16A1 /* ELEmotionMenuView.m in Sources */,
 				1E444146246BECA9004C16A1 /* ELMessageFileBubbleView.m in Sources */,
 				1E44427B246BECA9004C16A1 /* ELRegisterViewController.m in Sources */,
@@ -2425,6 +2435,60 @@
 					"$(PROJECT_DIR)/ElingIMDemo/ElingIM",
 					"$(PROJECT_DIR)/ElingIMDemo/Classes/Helper/VoiceConvert",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AliyunOSSiOS\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JGProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XCApplicationHelper\"",
+					"-framework",
+					"\"XCBaseModule\"",
+					"-framework",
+					"\"XCCategory\"",
+					"-framework",
+					"\"XCCountdownButton\"",
+					"-framework",
+					"\"XCCustomItemView\"",
+					"-framework",
+					"\"XCDateUnit\"",
+					"-framework",
+					"\"XCPresentation\"",
+					"-framework",
+					"\"XCProgressHUD\"",
+					"-framework",
+					"\"XCSettingView\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eling.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ELTestDevelopment;
@@ -2455,6 +2519,60 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ElingIMDemo/ElingIM",
 					"$(PROJECT_DIR)/ElingIMDemo/Classes/Helper/VoiceConvert",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AliyunOSSiOS\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JGProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XCApplicationHelper\"",
+					"-framework",
+					"\"XCBaseModule\"",
+					"-framework",
+					"\"XCCategory\"",
+					"-framework",
+					"\"XCCountdownButton\"",
+					"-framework",
+					"\"XCCustomItemView\"",
+					"-framework",
+					"\"XCDateUnit\"",
+					"-framework",
+					"\"XCPresentation\"",
+					"-framework",
+					"\"XCProgressHUD\"",
+					"-framework",
+					"\"XCSettingView\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eling.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

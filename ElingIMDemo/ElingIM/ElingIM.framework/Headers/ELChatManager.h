@@ -135,13 +135,12 @@ typedef void(^ELProgressBlock)(int64_t receivedBytes, int64_t expectedBytes);
 - (void)markMessageAsRead:(NSString *)messageId
                completion:(void (^)(NSError *aError))aCompletionBlock;
 
-
-#pragma mark - 👀 Upload 👀 💤
-
 /**
  *  返回消息附件缓存目录的路径（如果不存在，会自动创建）
  */
 - (NSString *)getMessageAttachmentCachePath;
+
+#pragma mark - 👀 Upload 👀 💤
 
 /**
  *  上传附件到到服务器，上传完成后会同步更新 aMesage 对象

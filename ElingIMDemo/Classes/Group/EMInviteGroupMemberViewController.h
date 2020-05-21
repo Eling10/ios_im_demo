@@ -11,7 +11,7 @@
  */
 
 #import "ELSearchViewController.h"
-#import <ElingIM/ELUserInformation.h>
+#import "ElingIM.h"
 
 @interface EMInviteGroupMemberViewController : ELSearchViewController
 

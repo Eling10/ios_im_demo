@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E7744C53145BBB7BACA6ADA0B60B47D7"
-               BuildableName = "libXCDateUnit.a"
+               BlueprintIdentifier = "998A9B2BD065DA62B94F94EF660E7C51"
+               BuildableName = "XCDateUnit.framework"
                BlueprintName = "XCDateUnit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

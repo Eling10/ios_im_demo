@@ -8,13 +8,13 @@
 
 #import "ELCallHelper.h"
 
+#import "ElingIM.h"
 #import "ELUtilMacros.h"
 
 #import "EL1v1CallViewController.h"
 #import "EL1v1AudioViewController.h"
 #import "EL1v1VideoViewController.h"
 
-#import <ElingIM/ELClient.h>
 #import <XCMacros/XCMacros.h>
 #import <XCProgressHUD/UIView+XCProgressHUD.h>
 
@@ -57,7 +57,6 @@ static ELCallHelper *callManager = nil;
     if (self) {
         [self _initManager];
     }
-    
     return self;
 }
 

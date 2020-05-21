@@ -1,0 +1,6 @@
+framework module XCPresentation {
+  umbrella header "XCPresentation-umbrella.h"
+
+  export *
+  module * { export * }
+}

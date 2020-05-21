@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>AliyunOSSiOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -69,12 +64,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XCApplicationHelper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XCBaseModule.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>XCCategory.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XCCountdownButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -94,17 +99,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>XCNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>XCPresentation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>XCProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XCSettingView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

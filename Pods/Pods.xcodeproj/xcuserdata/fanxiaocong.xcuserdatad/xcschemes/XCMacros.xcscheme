@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C6A4A9A5D5030D7771E0C7087EA15BA"
+               BlueprintIdentifier = "5E4DC397CC3DC5557B44304CE7D3DCBF"
                BuildableName = "XCMacros"
                BlueprintName = "XCMacros"
                ReferencedContainer = "container:Pods.xcodeproj">

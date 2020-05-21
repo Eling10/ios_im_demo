@@ -15,11 +15,11 @@
 #import "ELNotificationCell.h"
 #import "ELNotificationHelper.h"
 
+#import "ElingIM.h"
 #import "ELColorMacros.h"
 #import "ELChineseToPinyin.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELClient.h>
 #import <Masonry/Masonry.h>
 #import <XCMacros/XCMacros.h>
 #import <SDWebImage/UIImageView+WebCache.h>

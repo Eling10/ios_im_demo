@@ -8,12 +8,12 @@
 
 #import "ELRootViewControllerHelper.h"
 
+#import "ElingIM.h"
 #import "AppDelegate.h"
 #import "UIView+ELExtension.h"
 
-#import <ElingIM/ELClient.h>
-#import <XCCategory/UIViewController+XCExtension.h>
 #import <XCBaseModule/XCUserInformationTool.h>
+#import <XCCategory/UIViewController+XCExtension.h>
 
 @implementation ELRootViewControllerHelper
 

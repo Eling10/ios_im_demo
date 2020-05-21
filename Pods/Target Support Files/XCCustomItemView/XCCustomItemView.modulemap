@@ -1,0 +1,6 @@
+framework module XCCustomItemView {
+  umbrella header "XCCustomItemView-umbrella.h"
+
+  export *
+  module * { export * }
+}

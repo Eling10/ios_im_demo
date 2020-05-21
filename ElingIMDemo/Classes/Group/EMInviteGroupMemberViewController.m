@@ -14,10 +14,10 @@
 
 #import "ELAvatarNameCell.h"
 
+#import "ElingIM.h"
 #import "UIView+ELExtension.h"
 #import "UIScrollView+Refresh.h"
 
-#import <ElingIM/ELClient.h>
 #import <XCMacros/XCMacros.h>
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>

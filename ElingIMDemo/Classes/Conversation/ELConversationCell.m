@@ -7,12 +7,11 @@
 //
 
 #import "ELConversationCell.h"
+#import "ElingIM.h"
 #import "ELBadgeLabel.h"
 #import "ELConversationHelper.h"
 
 #import <Masonry/Masonry.h>
-#import <ElingIM/ELConversation.h>
-#import <ElingIM/ELTextMessageBody.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ELConversationCell ()
@@ -43,7 +42,6 @@
     return self;
 }
 
-//
 #pragma mark - private layout subviews
 
 - (void)_setupSubview
