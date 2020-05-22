@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "259C9B0C02E0B8B7EC56DBD7A3CD0785"
+               BlueprintIdentifier = "278E7BF28AEAA2F0D996270F4CA7F7DF"
                BuildableName = "XCApplicationHelper.framework"
                BlueprintName = "XCApplicationHelper"
                ReferencedContainer = "container:Pods.xcodeproj">

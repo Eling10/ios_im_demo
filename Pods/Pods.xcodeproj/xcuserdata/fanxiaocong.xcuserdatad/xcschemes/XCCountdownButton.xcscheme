@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDE9E55EEB1FB7D957AEFCA669F4DB64"
+               BlueprintIdentifier = "3E481889FA423EBB3E94B3601C40CA29"
                BuildableName = "XCCountdownButton.framework"
                BlueprintName = "XCCountdownButton"
                ReferencedContainer = "container:Pods.xcodeproj">

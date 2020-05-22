@@ -17,19 +17,9 @@
 
 ## 介绍
 
-`ElingIM SDK` 示例程序，包括IM即时通讯，一对一视频通话，群级及好友管理功能。
+`ElingIM SDK` 示例程序，包括IM即时通讯，一对一音视频通话，群组及好友管理功能。
 
-<br />
-
-**项目截图：**
-
-![聊天](Screenshots/chat.png)
-![联系人](Screenshots/contact.png)
-![会话](Screenshots/conversation.png)
-![群](Screenshots/group.png)
-![音频通话](Screenshots/audio_chat.png)
-![视频通话](Screenshots/video_chat.png)
-
+![聊天](Screenshots/guide.gif)
 
 ## 注意
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5C5778DDB6BE64FDD39D161D7F8639D"
+               BlueprintIdentifier = "577540737B1F620202C3FA8B8BE19DE5"
                BuildableName = "XCCustomItemView.framework"
                BlueprintName = "XCCustomItemView"
                ReferencedContainer = "container:Pods.xcodeproj">

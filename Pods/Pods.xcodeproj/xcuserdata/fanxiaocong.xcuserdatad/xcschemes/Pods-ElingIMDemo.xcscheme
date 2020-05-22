@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4351DED027BB4FA4D236328CD80BA2AD"
+               BlueprintIdentifier = "F706165F529456CEC921ACF8B6B62A7E"
                BuildableName = "Pods_ElingIMDemo.framework"
                BlueprintName = "Pods-ElingIMDemo"
                ReferencedContainer = "container:Pods.xcodeproj">

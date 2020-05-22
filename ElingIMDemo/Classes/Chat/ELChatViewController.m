@@ -21,7 +21,6 @@
 #import "ELDateHelper.h"
 #import "ELConversationHelper.h"
 #import "ELAudioPlayerHelper.h"
-#import "XCPhotoBrowserManager.h"
 #import "UIScrollView+Refresh.h"
 #import "UIView+ELExtension.h"
 
@@ -37,6 +36,7 @@
 #import <XCCategory/UIColor+XCExtension.h>
 #import <XCCustomItemView/XCCustomItemView.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import <XCPhotoBrowser/XCPhotoBrowserManager.h>
 
 @interface ELChatViewController ()<ELChatBarDelegate, ELChatManagerDelegate, ELMessageCellDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -340,17 +340,16 @@ static NSString *const ELMessageTimeCellIdentifier = @"ELMessageTimeCellIdentifi
 
 /**
  *  图片消息被点击
-*/
+ */
 - (void)_imageMessageCellDidSelected:(ELMessageCell *)cell
 {
     ELImageMessageBody *body = (ELImageMessageBody *)cell.model.body;
     UIImage *image = [UIImage imageWithContentsOfFile:body.localPath];
-    XCPhotoBrowserConfigure *config = [XCPhotoBrowserConfigure defaultConfigure];
-    config.column = 1;
     if (image) {
-        [XCPhotoBrowserManager showFromViewController:self.navigationController selectedIndex:0 seletedImageView:nil images:@[image] configure:config];
+        [XCPhotoBrowserManager showFromViewController:self.navigationController selectedIndex:0 seletedImageView:cell.bubbleView images:@[image] configure:nil];
     } else {
-        [XCPhotoBrowserManager showFromViewController:self.navigationController selectedIndex:0 seletedImageView:nil urls:@[body.remotePath ?: @""] thumbImgs:nil configure:config];
+        NSArray *thumbImgs = cell.bubbleView.image ? @[cell.bubbleView.image] : nil;
+        [XCPhotoBrowserManager showFromViewController:self.navigationController selectedIndex:0 seletedImageView:cell.bubbleView urls:@[body.remotePath ?: @""] thumbImgs:thumbImgs configure:nil];
     }
 }
 

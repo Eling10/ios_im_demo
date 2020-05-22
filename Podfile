@@ -16,14 +16,13 @@ target 'ElingIMDemo' do
   pod 'XCCategory', '~> 1.0.8'
   
   pod 'Masonry', '~> 1.1.0'
-  pod 'SDWebImage', '~> 5.7.2'
   pod 'MJRefresh', '~> 3.4.1'
-  pod 'XCProgressHUD', '~> 0.0.4'
   pod 'XCCustomItemView', '~> 0.0.3'
   pod 'XCPresentation', '~> 2.0.1'
   pod 'IQKeyboardManager', '~> 6.5.5'
   pod 'XCCountdownButton', '~> 2.0.1'
   pod 'XCSettingView', '~> 1.0.3'
+  pod 'XCPhotoBrowser', '~> 1.0.6'
   pod 'XCBaseModule/Tools'
 
   target 'ElingIMDemoTests' do

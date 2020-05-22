@@ -372,12 +372,6 @@
 		1E444286246BECA9004C16A1 /* ELRealtimeSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444106246BECA8004C16A1 /* ELRealtimeSearch.m */; };
 		1E444287246BECA9004C16A1 /* UIView+ELExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444108246BECA8004C16A1 /* UIView+ELExtension.m */; };
 		1E444288246BECA9004C16A1 /* ELChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44410A246BECA8004C16A1 /* ELChineseToPinyin.m */; };
-		1E444289246BECA9004C16A1 /* XCPhotoBrowserConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44410F246BECA9004C16A1 /* XCPhotoBrowserConfigure.m */; };
-		1E44428A246BECA9004C16A1 /* XCPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444110246BECA9004C16A1 /* XCPhotoBrowserCell.m */; };
-		1E44428B246BECA9004C16A1 /* XCPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444115246BECA9004C16A1 /* XCPhotoBrowserController.m */; };
-		1E44428C246BECA9004C16A1 /* XCPhotoBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444118246BECA9004C16A1 /* XCPhotoBrowserModel.m */; };
-		1E44428D246BECA9004C16A1 /* XCPhotoBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444119246BECA9004C16A1 /* XCPhotoBrowserManager.m */; };
-		1E44428E246BECA9004C16A1 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44411A246BECA9004C16A1 /* UIView+Extension.m */; };
 		1E44428F246BECA9004C16A1 /* ELConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44411D246BECA9004C16A1 /* ELConversationCell.m */; };
 		1E444290246BECA9004C16A1 /* ELBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E44411F246BECA9004C16A1 /* ELBadgeLabel.m */; };
 		1E444291246BECA9004C16A1 /* ELConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E444121246BECA9004C16A1 /* ELConversationViewController.m */; };
@@ -852,18 +846,6 @@
 		1E44410B246BECA8004C16A1 /* ELConversationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELConversationHelper.h; sourceTree = "<group>"; };
 		1E44410C246BECA8004C16A1 /* ELDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELDateHelper.h; sourceTree = "<group>"; };
 		1E44410D246BECA8004C16A1 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
-		1E44410F246BECA9004C16A1 /* XCPhotoBrowserConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoBrowserConfigure.m; sourceTree = "<group>"; };
-		1E444110246BECA9004C16A1 /* XCPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoBrowserCell.m; sourceTree = "<group>"; };
-		1E444111246BECA9004C16A1 /* XCPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoBrowserController.h; sourceTree = "<group>"; };
-		1E444112246BECA9004C16A1 /* XCPhotoBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoBrowserManager.h; sourceTree = "<group>"; };
-		1E444113246BECA9004C16A1 /* XCPhotoBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoBrowserModel.h; sourceTree = "<group>"; };
-		1E444114246BECA9004C16A1 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		1E444115246BECA9004C16A1 /* XCPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoBrowserController.m; sourceTree = "<group>"; };
-		1E444116246BECA9004C16A1 /* XCPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoBrowserCell.h; sourceTree = "<group>"; };
-		1E444117246BECA9004C16A1 /* XCPhotoBrowserConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoBrowserConfigure.h; sourceTree = "<group>"; };
-		1E444118246BECA9004C16A1 /* XCPhotoBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoBrowserModel.m; sourceTree = "<group>"; };
-		1E444119246BECA9004C16A1 /* XCPhotoBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoBrowserManager.m; sourceTree = "<group>"; };
-		1E44411A246BECA9004C16A1 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1E44411C246BECA9004C16A1 /* ELBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELBadgeLabel.h; sourceTree = "<group>"; };
 		1E44411D246BECA9004C16A1 /* ELConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELConversationCell.m; sourceTree = "<group>"; };
 		1E44411E246BECA9004C16A1 /* ELConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELConversationViewController.h; sourceTree = "<group>"; };
@@ -1537,7 +1519,6 @@
 				1E44410D246BECA8004C16A1 /* UIScrollView+Refresh.h */,
 				1E4440FF246BECA8004C16A1 /* UIScrollView+Refresh.m */,
 				1E4440F1246BECA8004C16A1 /* VoiceConvert */,
-				1E44410E246BECA8004C16A1 /* XCPhotoBrowser */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1581,25 +1562,6 @@
 				1E4440FE246BECA8004C16A1 /* wav.h */,
 			);
 			path = amrwapper;
-			sourceTree = "<group>";
-		};
-		1E44410E246BECA8004C16A1 /* XCPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				1E44410F246BECA9004C16A1 /* XCPhotoBrowserConfigure.m */,
-				1E444110246BECA9004C16A1 /* XCPhotoBrowserCell.m */,
-				1E444111246BECA9004C16A1 /* XCPhotoBrowserController.h */,
-				1E444112246BECA9004C16A1 /* XCPhotoBrowserManager.h */,
-				1E444113246BECA9004C16A1 /* XCPhotoBrowserModel.h */,
-				1E444114246BECA9004C16A1 /* UIView+Extension.h */,
-				1E444115246BECA9004C16A1 /* XCPhotoBrowserController.m */,
-				1E444116246BECA9004C16A1 /* XCPhotoBrowserCell.h */,
-				1E444117246BECA9004C16A1 /* XCPhotoBrowserConfigure.h */,
-				1E444118246BECA9004C16A1 /* XCPhotoBrowserModel.m */,
-				1E444119246BECA9004C16A1 /* XCPhotoBrowserManager.m */,
-				1E44411A246BECA9004C16A1 /* UIView+Extension.m */,
-			);
-			path = XCPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		1E44411B246BECA9004C16A1 /* Conversation */ = {
@@ -2084,6 +2046,7 @@
 				"${BUILT_PRODUCTS_DIR}/XCCountdownButton/XCCountdownButton.framework",
 				"${BUILT_PRODUCTS_DIR}/XCCustomItemView/XCCustomItemView.framework",
 				"${BUILT_PRODUCTS_DIR}/XCDateUnit/XCDateUnit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCPhotoBrowser/XCPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/XCPresentation/XCPresentation.framework",
 				"${BUILT_PRODUCTS_DIR}/XCProgressHUD/XCProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/XCSettingView/XCSettingView.framework",
@@ -2106,6 +2069,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCCountdownButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCCustomItemView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDateUnit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCPresentation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCSettingView.framework",
@@ -2189,7 +2153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E0E819324762D0A00F643FC /* ELProfileViewController.m in Sources */,
-				1E44428B246BECA9004C16A1 /* XCPhotoBrowserController.m in Sources */,
 				1E444285246BECA9004C16A1 /* ELDateHelper.m in Sources */,
 				1E444138246BECA9004C16A1 /* ELNotificationViewController.m in Sources */,
 				1E444137246BECA9004C16A1 /* ELNotificationModel.m in Sources */,
@@ -2220,7 +2183,6 @@
 				1E44412D246BECA9004C16A1 /* ELCreateGroupViewController.m in Sources */,
 				1E44427F246BECA9004C16A1 /* ELRootViewControllerHelper.m in Sources */,
 				1E44413F246BECA9004C16A1 /* ELCoreTextResultHelper.m in Sources */,
-				1E44428D246BECA9004C16A1 /* XCPhotoBrowserManager.m in Sources */,
 				1E444149246BECA9004C16A1 /* UIImageView+GIF.m in Sources */,
 				1E444295246BECA9004C16A1 /* ELInviteFriendViewController.m in Sources */,
 				1E443C99246B7FB5004C16A1 /* AppDelegate.m in Sources */,
@@ -2228,7 +2190,6 @@
 				1E444130246BECA9004C16A1 /* ELGroupMemberCell.m in Sources */,
 				1E444143246BECA9004C16A1 /* ELMessageTextBubbleView.m in Sources */,
 				1E44412F246BECA9004C16A1 /* ELGroupMemberListViewController.m in Sources */,
-				1E444289246BECA9004C16A1 /* XCPhotoBrowserConfigure.m in Sources */,
 				1E44412E246BECA9004C16A1 /* ELGroupDetailViewController.m in Sources */,
 				1E44414A246BECA9004C16A1 /* ELEmotionModel.m in Sources */,
 				1E444278246BECA9004C16A1 /* EL1v1CallViewController.m in Sources */,
@@ -2237,12 +2198,9 @@
 				1E444288246BECA9004C16A1 /* ELChineseToPinyin.m in Sources */,
 				1E444145246BECA9004C16A1 /* ELMessageVideoBubbleView.m in Sources */,
 				1E444144246BECA9004C16A1 /* ELMessageBubbleView.m in Sources */,
-				1E44428E246BECA9004C16A1 /* UIView+Extension.m in Sources */,
-				1E44428A246BECA9004C16A1 /* XCPhotoBrowserCell.m in Sources */,
 				1E444148246BECA9004C16A1 /* ELMessageTimeCell.m in Sources */,
 				1E44414D246BECA9004C16A1 /* ELAudioRecordView.m in Sources */,
 				1E444274246BECA9004C16A1 /* ELCallViewController.m in Sources */,
-				1E44428C246BECA9004C16A1 /* XCPhotoBrowserModel.m in Sources */,
 				1E444290246BECA9004C16A1 /* ELBadgeLabel.m in Sources */,
 				1E44413E246BECA9004C16A1 /* ELCoreTextConst.m in Sources */,
 				1E0E81A12476523C00F643FC /* ELForgetPasswordViewController.m in Sources */,

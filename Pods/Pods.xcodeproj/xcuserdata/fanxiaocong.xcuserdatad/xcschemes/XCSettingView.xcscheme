@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5236FB3FFDDAACCDF225AF81373FA0F"
+               BlueprintIdentifier = "D16B0D4319F89C80450D40F1EEEB4381"
                BuildableName = "XCSettingView.framework"
                BlueprintName = "XCSettingView"
                ReferencedContainer = "container:Pods.xcodeproj">
