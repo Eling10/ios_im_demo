@@ -218,7 +218,6 @@ LazyLoadMethod(sectionTitles);
     [self.dataSource addObjectsFromArray:sortedArray];
 }
 
-
 - (void)_deleteContact:(NSString *)aContact
             completion:(void (^)(void))aCompletion
 {
@@ -242,7 +241,7 @@ LazyLoadMethod(sectionTitles);
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 4;
+        return 3;
     }
     return [self.dataSource[section - 1] count];
 }

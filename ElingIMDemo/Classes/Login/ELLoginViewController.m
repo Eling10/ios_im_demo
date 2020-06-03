@@ -189,7 +189,7 @@
 {
     sender.selected = !sender.isSelected;
     self.passwordF.secureTextEntry = !sender.isSelected;
-}
+} // 那就好，开心最重要，本来还
 
 /**
  *  点击了登录按钮的回调

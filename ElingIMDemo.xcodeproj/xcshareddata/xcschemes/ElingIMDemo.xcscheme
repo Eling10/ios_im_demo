@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E443C93246B7FB5004C16A1"
-               BuildableName = "ElingIMDemo.app"
+               BuildableName = "Eling IM.app"
                BlueprintName = "ElingIMDemo"
                ReferencedContainer = "container:ElingIMDemo.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E443C93246B7FB5004C16A1"
-            BuildableName = "ElingIMDemo.app"
+            BuildableName = "Eling IM.app"
             BlueprintName = "ElingIMDemo"
             ReferencedContainer = "container:ElingIMDemo.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E443C93246B7FB5004C16A1"
-            BuildableName = "ElingIMDemo.app"
+            BuildableName = "Eling IM.app"
             BlueprintName = "ElingIMDemo"
             ReferencedContainer = "container:ElingIMDemo.xcodeproj">
          </BuildableReference>

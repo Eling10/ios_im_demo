@@ -39,7 +39,7 @@
     
     if (self.navigationController) {
         [self.navigationController setNavigationBarHidden:self.isHideNavigationBar animated:YES];
-    }
+    } 
 }
 
 /**

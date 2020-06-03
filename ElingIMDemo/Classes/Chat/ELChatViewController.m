@@ -457,17 +457,16 @@ static NSString *const ELMessageTimeCellIdentifier = @"ELMessageTimeCellIdentifi
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
         dispatch_async(dispatch_get_main_queue(), ^{
             switch (status) {
-                case PHAuthorizationStatusAuthorized: //已获取权限
-                {
+                case PHAuthorizationStatusAuthorized: { // 已获取权限
                     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
                     self.imagePicker.mediaTypes = @[(NSString *)kUTTypeImage];
                     [self presentViewController:self.imagePicker animated:YES completion:nil];
-                }
                     break;
-                case PHAuthorizationStatusDenied: //用户已经明确否认了这一照片数据的应用程序访问
+                }
+                case PHAuthorizationStatusDenied: // 用户已经明确否认了这一照片数据的应用程序访问
                     [self.view showText:@"不允许访问相册"];
                     break;
-                case PHAuthorizationStatusRestricted://此应用程序没有被授权访问的照片数据。可能是家长控制权限
+                case PHAuthorizationStatusRestricted: // 此应用程序没有被授权访问的照片数据。可能是家长控制权限
                     [self.view showText:@"没有授权访问相册"];
                     break;
                 default:
@@ -503,9 +502,7 @@ static NSString *const ELMessageTimeCellIdentifier = @"ELMessageTimeCellIdentifi
         @strongify(self);
         [[ELCallHelper sharedHelper] callTo:self.conversation.conversationId callType:ELCallTypeVideo];
     }]];
-    
-    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-    }]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     
     [self presentViewController:alertController animated:YES completion:nil];
 }

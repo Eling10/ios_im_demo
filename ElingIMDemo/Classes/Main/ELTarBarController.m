@@ -73,8 +73,8 @@
                       selImgName:@"tabbar_contacts_blue"];
     [self addChildViewController:@"ELProfileViewController"
                            title:@"我"
-                         imgName:@"tabbar_contacts_gray"
-                      selImgName:@"tabbar_contacts_blue"];
+                         imgName:@"tabbar_me_gray"
+                      selImgName:@"tabbar_me_blue"];
     
     /// 红点数量
     [self _loadTabBarItemsBadge];

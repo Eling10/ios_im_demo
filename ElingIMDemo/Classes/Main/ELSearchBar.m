@@ -28,7 +28,6 @@
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange) name:UITextFieldTextDidChangeNotification object:nil];
     }
-    
     return self;
 }
 
@@ -60,7 +59,7 @@
         make.right.equalTo(self).offset(-15);
         make.height.equalTo(@35);
     }];
-    self.placeholder = @"请输入用户名/邮箱/手机号";
+    self.placeholder = @"请输入用户名/邮箱/手机号";   
     
     UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 15)];
     UIImageView *searchIcon = [[UIImageView alloc] initWithFrame:leftView.bounds];

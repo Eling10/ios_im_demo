@@ -1,5 +1,13 @@
 PODS:
   - AliyunOSSiOS (2.10.8)
+  - ElingIM (1.0.1):
+    - AliyunOSSiOS (~> 2.10.8)
+    - FMDB (~> 2.7.5)
+    - MJExtension (~> 3.2.1)
+    - XCApplicationHelper (~> 0.0.1)
+    - XCCategory (~> 1.0.8)
+    - XCDateUnit (~> 0.0.5)
+    - XCMacros (~> 1.0.5)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -20,7 +28,7 @@ PODS:
   - XCCustomItemView (0.0.3)
   - XCDateUnit (0.0.5)
   - XCMacros (1.0.5)
-  - XCPhotoBrowser (1.0.6):
+  - XCPhotoBrowser (1.0.7):
     - SDWebImage (~> 5.8.0)
     - XCProgressHUD (~> 0.0.4)
   - XCPresentation (2.0.2)
@@ -29,19 +37,13 @@ PODS:
   - XCSettingView (1.0.3)
 
 DEPENDENCIES:
-  - AliyunOSSiOS (~> 2.10.8)
-  - FMDB (~> 2.7.5)
+  - ElingIM (~> 1.0.1)
   - IQKeyboardManager (~> 6.5.5)
   - Masonry (~> 1.1.0)
-  - MJExtension (~> 3.2.1)
   - MJRefresh (~> 3.4.1)
-  - XCApplicationHelper (~> 0.0.1)
   - XCBaseModule/Tools
-  - XCCategory (~> 1.0.8)
   - XCCountdownButton (~> 2.0.1)
   - XCCustomItemView (~> 0.0.3)
-  - XCDateUnit (~> 0.0.5)
-  - XCMacros (~> 1.0.5)
   - XCPhotoBrowser (~> 1.0.6)
   - XCPresentation (~> 2.0.1)
   - XCSettingView (~> 1.0.3)
@@ -49,6 +51,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AliyunOSSiOS
+    - ElingIM
     - FMDB
     - IQKeyboardManager
     - JGProgressHUD
@@ -70,6 +73,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
+  ElingIM: 83ec4f72d1aff34a9c8a7af41e6090aff6cb3313
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
@@ -84,11 +88,11 @@ SPEC CHECKSUMS:
   XCCustomItemView: a2ec3d42590fb46d9297575b4019edab8aa2eb33
   XCDateUnit: 701ba55ff43947a50766d68f40cbffa801f85a5b
   XCMacros: 65ea17822e4de6e1e12cacf05d57b619ef196c2f
-  XCPhotoBrowser: 7b8012e41cb85fc1208939734865ef041ddbb2df
+  XCPhotoBrowser: a603d9888bfd54b6f7b1bc467feb66d06d9b3da4
   XCPresentation: 1ddfddfdd7e7cf8a500b02007805171664b64623
   XCProgressHUD: 1553a22a8c70856557a8509edcf06271e98ff3fa
   XCSettingView: 31d79fe21db1f08b769971b112e7dac1715ee9f0
 
-PODFILE CHECKSUM: 2d069cd84d8c9ab263f9b22302489046ab9b905f
+PODFILE CHECKSUM: 9e8a0e6722520ff32069c649de60cd17a51549b7
 
 COCOAPODS: 1.6.0
