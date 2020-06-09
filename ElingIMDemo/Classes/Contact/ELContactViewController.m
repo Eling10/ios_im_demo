@@ -102,7 +102,7 @@ LazyLoadMethod(sectionTitles);
     self.tableView.loadNewDataHandle = ^{
         @strongify(self);
         [self loadData];
-    };
+    }; 
     
     /// 好友通知
     self.notifCell = [[ELAvatarNameCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ELNotificationsCellIdentifier];
@@ -124,6 +124,7 @@ LazyLoadMethod(sectionTitles);
         make.height.equalTo(@20);
         make.width.greaterThanOrEqualTo(@20);
     }];
+    [self.tableView reloadData];
 }
 
 #pragma mark - 👀 加载数据 👀 💤

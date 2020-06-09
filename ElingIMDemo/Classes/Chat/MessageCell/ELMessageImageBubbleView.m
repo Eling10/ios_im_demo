@@ -91,7 +91,7 @@
         size = img.size;
     } else {
         // 加载网络图片
-        [self sd_setImageWithURL:[NSURL URLWithString:aRemotePath]];
+        [self sd_setImageWithURL:[NSURL URLWithString:aRemotePath] placeholderImage:[UIImage imageNamed:@"msg_video_bg"]];
     }
       
     block(size);
